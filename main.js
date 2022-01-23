@@ -29,10 +29,12 @@ hnotTest$.css({
     color: "red"
 })
 
-$(':header + :header').css({
+let headerWithHeader = $(':header + :header')
+headerWithHeader.css({
     color: "red"
 })
 
-$(":header.test + :header.test").css({
+let headerAndTest = $(":header.test + :header.test")
+headerAndTest.css({
     color: "red"
 })
